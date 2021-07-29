@@ -7,7 +7,7 @@
 ?>
 
 <form action="result.php" method="get">
-  <input type="text" name="message">
+  <textarea name="message"></textarea>
   <input type="text" name="username">
   <button>Send</button>
 </form>
