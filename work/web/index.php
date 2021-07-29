@@ -7,8 +7,11 @@
 ?>
 
 <form action="result.php" method="get">
-  <textarea name="message"></textarea>
-  <input type="text" name="username">
+  <select name="color">
+    <option value="orange">Orange</option>
+    <option value="pink">Pink</option>
+    <option value="gold">Gold</option>
+  </select>
   <button>Send</button>
 </form>
 
