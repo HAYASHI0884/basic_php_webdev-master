@@ -7,7 +7,7 @@
   if(isset($color)) {
     $color;
   } else {
-    echo "None Selected";
+    $color = 'transparent';
   }
 
   include('../app/_parts/_header.php');
