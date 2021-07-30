@@ -11,6 +11,7 @@
   <label><input type="radio" name="color" value="pink">Pink</label>
   <label><input type="radio" name="color" value="gold">Gold</label>
   <button>Send</button>
+  <a href="reset.php">[reset]</a>
 </form>
 
 <?php
