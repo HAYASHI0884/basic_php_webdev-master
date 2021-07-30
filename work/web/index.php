@@ -2,16 +2,22 @@
   
   require('../app/functions.php');
 
+  $filename = '../app/messages.txt';
+  $messages = file($filename, FILE_IGNORE_NEW_LINES);
+
   include('../app/_parts/_header.php');
 
 ?>
 
-<form action="result.php" method="get">
-  <label><input type="radio" name="color" value="orange">Orange</label>
-  <label><input type="radio" name="color" value="pink">Pink</label>
-  <label><input type="radio" name="color" value="gold">Gold</label>
+<ul>
+  <?php foreach($messages as $message): ?>
+    <li><?= h($message); ?></li>
+  <?php endforeach; ?>
+</ul>
+
+<form action="result.php" method="post">
+  <input type="text" name="message">
   <button>Send</button>
-  <a href="reset.php">[reset]</a>
 </form>
 
 <?php
