@@ -7,9 +7,9 @@
 ?>
 
 <form action="result.php" method="get">
-  <label><input type="checkbox" name="colors[]" value="orange">Orange</label>
-  <label><input type="checkbox" name="colors[]" value="pink">Pink</label>
-  <label><input type="checkbox" name="colors[]" value="gold">Gold</label>
+  <label><input type="radio" name="color" value="orange">Orange</label>
+  <label><input type="radio" name="color" value="pink">Pink</label>
+  <label><input type="radio" name="color" value="gold">Gold</label>
   <button>Send</button>
 </form>
 
