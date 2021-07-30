@@ -7,10 +7,10 @@
 ?>
 
 <form action="result.php" method="get">
-  <select name="color">
+  <select name="colors[]" multiple>
     <option value="orange">Orange</option>
-    <option value="pink">Pink</option>
-    <option value="gold">Gold</option>
+    <option value="pink"  >Pink</option>
+    <option value="gold"  >Gold</option>
   </select>
   <button>Send</button>
 </form>
